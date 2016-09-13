@@ -11,12 +11,12 @@ import com.taotao.common.utils.FtpUtil;
 
 public class FTPTest {
 
-	@Test
+	/*@Test
 	public void testFtpClient() throws Exception {
 		//创建一个FtpClient对象
 		FTPClient ftpClient = new FTPClient();
 		//创建ftp连接。默认是21端口
-		ftpClient.connect("192.168.25.133", 21);
+		//ftpClient.connect("192.168.25.133", 21);
 		//登录ftp服务器，使用用户名和密码
 		ftpClient.login("ftpuser", "ftpuser");
 		//上传文件。
@@ -32,12 +32,12 @@ public class FTPTest {
 		//关闭连接
 		ftpClient.logout();
 		
-	}
+	}*/
 	
 	@Test
 	public void testFtpUtil() throws Exception {
 		FileInputStream inputStream = new FileInputStream(new File("D:\\Documents\\Pictures\\images\\2010101415583352_S.jpg"));
-		FtpUtil.uploadFile("192.168.25.133", 21, "ftpuser", "ftpuser", "/home/ftpuser/www/images", "/2015/09/04", "hello.jpg", inputStream);
+		//FtpUtil.uploadFile("192.168.25.133", 21, "ftpuser", "ftpuser", "/home/ftpuser/www/images", "/2015/09/04", "hello.jpg", inputStream);
 		
 	}
 }
